@@ -3,8 +3,11 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+p{
+  font-family: 'Inter', sans-serif;
+}
 .background-main {
-  background: url('./background/blue.jpg');
+  background: url('./background/lush.jpg');
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -74,8 +77,11 @@ padding: 4px;
 .icon-taskbar{
 
 }
+.icon-window{
+
+}
 .icon:hover{
-  background-color: #525457f7;
+  background-color: #60606063;
 }
 
 
@@ -163,8 +169,6 @@ max-height: 100px;
 .windows-inner-top{
   background: rgba(0, 0, 0, 0.7);
 backdrop-filter: blur(50px);
-/* Note: backdrop-filter has minimal browser support */
-
 border-radius: 8px 8px 0px 0px;
 }
 .windows-inner-bottom{
@@ -173,4 +177,20 @@ backdrop-filter: blur(50px);
 /* Note: backdrop-filter has minimal browser support */
 
 border-radius: 0px 0px 8px 8px;
+}
+.designed{
+  font-size: 12px;
+  width: 630px;
+    text-align: center;
+}
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+  width: 22px;
+  border-radius: 13px;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+}
+
+*::-webkit-scrollbar-thumb {        
+  box-shadow: inset 0 0 0 10px;
 }

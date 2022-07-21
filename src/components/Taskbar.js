@@ -10,9 +10,9 @@ function Taskbar({contactModal, setContactModal, windowsModal, setWindowsModal})
     console.log(windowsModal)
     return (
         <div  className='taskbar-outer'>
-            <div onClick={()=>{setContactModal(!contactModal)}} className='taskbar-contact'><p>Contact</p></div>
+            <div onClick={()=>{setWindowsModal(false); setContactModal(!contactModal)}} className='taskbar-contact'><p>Contact</p></div>
             <div className='taskbar-icons'>
-                <Icon onClick={()=>{setWindowsModal(!windowsModal)}} img={windows} name='windows'/>
+                <Icon onClick={()=>{setWindowsModal(!windowsModal); setContactModal(false)}} img={windows} name='windows'/>
                 <Icon img={search} name='search'/>
                 <Icon img={folder} name='folder'/>
                 <Icon img={notes} name='notes'/>
