@@ -11,7 +11,7 @@ function Taskbar({contactModal, setContactModal, windowsModal, setWindowsModal})
     return (
         <div  className='taskbar-outer'>
             <div onClick={()=>{setWindowsModal(false); setContactModal(!contactModal)}} className='taskbar-contact'><p>Contact</p></div>
-            <div className='taskbar-icons'>
+            <div className='taskbar-icons gap-2 sm:gap-1'>
                 <Icon onClick={()=>{setWindowsModal(!windowsModal); setContactModal(false)}} img={windows} name='windows'/>
                 <Icon img={search} name='search'/>
                 <Icon img={folder} name='folder'/>

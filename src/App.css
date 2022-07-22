@@ -7,7 +7,7 @@ p{
   font-family: 'Inter', sans-serif;
 }
 .background-main {
-  background: url('./background/lush.jpg');
+  background: url('./background/green.jpg');
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -47,7 +47,6 @@ p{
   display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 20%;
 }
 .taskbar-time{
   color: white;
