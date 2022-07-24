@@ -17,10 +17,19 @@ import github from './Icons/Desktop/github.png'
 import linkedin from './Icons/Desktop/linkedin.png'
 import qualification from './Icons/Desktop/qualification.png'
 import resume from './Icons/Desktop/resume.png'
+import Blogs from './components/Blogs';
+import Portfolio from './components/Portfolio';
+import Skills from './components/Skills';
+import About from './components/About';
 
 function App() {
   const [contactModal, setContactModal] = useState(false)
   const [windowsModal, setWindowsModal] = useState(false)
+  const [blogsModal, setBlogsModal] = useState(false)
+  const [portfolioModal, setPortfolioModal] = useState(false)
+  const [skillsModal, setSkillsModal] = useState(false)
+  const [aboutModal, setAboutModal] = useState(false)
+
   console.log(windowsModal)
   return (
     <div  className='background-main'>
@@ -39,7 +48,22 @@ function App() {
       <Icon img={about} type='1' name='About' />
       <Icon img={skills} type='1' name='Skills' />
     </div>
-
+        {
+          blogsModal && 
+          <Blogs />
+        }
+        {
+          portfolioModal && 
+          <Portfolio/>
+        }
+        {
+          skillsModal &&
+          <Skills/>
+        }
+        {
+          aboutModal &&
+          <About/>
+        }
         <Taskbar setContactModal={setContactModal} contactModal={contactModal} setWindowsModal={setWindowsModal} windowsModal={windowsModal}/>
         {
           contactModal && <ContactModal/>
