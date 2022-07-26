@@ -8,13 +8,47 @@ p {
 }
 
 .background-main {
-  background: url('./background/black.jpg');
   width: 100%;
   height: 100vh;
+
+}
+.black{
+  background: url('./background/black.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+.blue{
+  background: url('./background/blue.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.green{
+  background: url('./background/green.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.lush{
+  background: url('./background/lush.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.red{
+  background: url('./background/red.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.white{
+  background: url('./background/white.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 .taskbar-outer {
   background: rgba(53, 53, 53, 0.9);

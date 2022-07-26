@@ -9,7 +9,7 @@ import plane from '../Icons/Contact/plane.png'
 
 function ContactModal() {
     return (
-        <div className='contact-modal flex flex-col p-4 rounded-lg ml-4 bottom-14 absolute sm:relative sm:ml-0 sm:bottom-0 sm:rounded-none'>
+        <div className='contact-modal flex flex-col p-4 rounded-lg ml-4 bottom-14 absolute sm:relative sm:ml-0 sm:bottom-0 sm:rounded-none z-10'>
             <div className='contact-time my-5'>
                 <p className='contact-time-text text-white text-4xl'>21 : 35</p>
                 <p className='text-white text-xl'>Let's get in touch</p>

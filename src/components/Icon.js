@@ -34,7 +34,7 @@ function Icon({ img, name, onClick, type, subtxt }) {
   if (type === '1') {
     return (
       <>
-        <div onClick={onClick} className='icon flex flex-col justify-center items-center z-10' >
+        <div onClick={onClick} className='icon flex flex-col justify-center items-center z-5' >
           <img className='py-3 px-6' src={img} alt=""></img>
           <p className='text-white text-xs'>{name}</p>
         </div>
