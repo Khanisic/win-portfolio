@@ -21,29 +21,37 @@ import Blogs from './components/Blogs';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import About from './components/About';
+import black from './background/black.jpg'
+import blue from './background/blue.jpg'
+import red from './background/red.jpg'
+import green from './background/green.jpg'
+import lush from './background/lush.jpg'
+import white from './background/white.png'
 
 function App() {
 
-  const images = ["black", "blue", "green", "lush", "red", "white"]
+  const images = [black, blue, green, lush, red, white]
   const [contactModal, setContactModal] = useState(false)
   const [windowsModal, setWindowsModal] = useState(false)
   const [blogsModal, setBlogsModal] = useState(false)
   const [portfolioModal, setPortfolioModal] = useState(false)
   const [skillsModal, setSkillsModal] = useState(false)
   const [aboutModal, setAboutModal] = useState(false)
-  const [currentBgImg, setCurrentBgImg] = useState('black')
-  const [counter, setCounter] = useState(0)
+  const [currentBgImg, setCurrentBgImg] = useState(black)
+  const [counter, setCounter] = useState(0);
+
+
   useEffect(() => {
     const changeImg = setInterval(() => {
       setCurrentBgImg(images[counter])
       console.log(counter)
-      if(counter === 5 ){
+      if (counter === 5) {
         setCounter(0)
-      }else{
+      } else {
         setCounter(counter + 1)
       }
-      
-    }, 4000);
+
+    }, 3000);
     return () => clearInterval(changeImg);
   }, [counter]);
 
@@ -77,7 +85,13 @@ function App() {
   const mainRef = useRef(null)
 
   return (
-    <div ref={mainRef} className={`${currentBgImg} background-main`}>
+    <div ref={mainRef} className='background-main'>
+      <img
+        className="background-main"
+        rel="preload"
+        src={currentBgImg}
+        alt=''
+      />
       <div className='desktop-icons flex flex-col flex-wrap justify-start items-baseline h-5/6 w-fit pl-3 pt-3'>
         <Icon img={computer} type='1' name='My computer' />
         <Icon img={bin} type='1' name='Recycle' />
