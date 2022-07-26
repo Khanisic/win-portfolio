@@ -28,10 +28,10 @@ import blogs from '../Icons/Folder/blogs.png'
 import blog from '../Icons/Windows/Bottom/notes.png'
 import Icon from './Icon'
 
-function Blogs({ folder }) {
+function Blogs({ folder, setBlogsModal, blogsModal }) {
     return (
-        <div className='folder-main absolute flex flex-col items-center content-center h-screen justify-center w-full top-0'>
-            <div className='folder-top w-2/4 flex flex-col items-center py-12'>
+        <div onClick={ () => { setBlogsModal(!blogsModal)}} className='folder-main absolute flex flex-col items-center content-center h-screen justify-center w-full top-0'>
+            <div className='folder-top w-2/4 flex flex-col items-center py-12 z-10' onClick={e => {e.stopPropagation();}}>
                 <h1 className="text-white text-4xl">Blogs</h1>
                 <div className='grid w-5/6 grid-cols-2 sm:grid-cols-1 pt-5'>
                     <Icon img={blog} type='3' name='Creating an NFT Marketplace With Solidity' subtxt='With just 200 lines of code'/>

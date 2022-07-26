@@ -7,7 +7,7 @@ import search from '../Icons/search.png'
 import windows from '../Icons/windows.png'
 
 function Taskbar({contactModal, setContactModal, windowsModal, setWindowsModal}) {
-    console.log(windowsModal)
+
     return (
         <div  className='taskbar-outer'>
             <div onClick={()=>{setWindowsModal(false); setContactModal(!contactModal)}} className='taskbar-contact'><p>Contact</p></div>

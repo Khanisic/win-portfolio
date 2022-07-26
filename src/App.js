@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import './App.css';
 import ContactModal from './components/ContactModal';
 import Icon from './components/Icon';
@@ -30,47 +30,75 @@ function App() {
   const [skillsModal, setSkillsModal] = useState(false)
   const [aboutModal, setAboutModal] = useState(false)
 
-  console.log(windowsModal)
+  const openModal = (type) => {
+    if (type === 'blogs') {
+      setBlogsModal(!blogsModal);
+      setSkillsModal(false);
+      setPortfolioModal(false);
+      setAboutModal(false)
+    }
+    if (type === 'skills') {
+      setSkillsModal(!skillsModal);
+      setBlogsModal(false);
+      setPortfolioModal(false);
+      setAboutModal(false)
+    }
+    if (type === 'port') {
+      setPortfolioModal(!portfolioModal);
+      setBlogsModal(false);
+      setSkillsModal(false);
+      setAboutModal(false)
+    }
+    if (type === 'about') {
+      setAboutModal(!aboutModal)
+      setPortfolioModal(false);
+      setBlogsModal(false);
+      setSkillsModal(false);
+    }
+  }
+
+  const mainRef = useRef(null)
+
   return (
-    <div  className='background-main'>
-    <div className='desktop-icons flex flex-col flex-wrap justify-start items-baseline h-5/6 w-fit pl-3 pt-3'>
-      <Icon img={computer} type='1' name='My computer' />
-      <Icon img={bin} type='1' name='Recycle' />
-      <Icon img={documents} type='1' name='Documents' />
-      <Icon img={chrome} type='1' name='Chrome' />
-      <Icon img={resume} type='1' name='Resume' />
-      <Icon img={downloads} type='1' name='Downloads' />
-      <Icon img={blogs} type='1' name='Blogs' />
-      <Icon img={brief} type='1' name='Portfolio' />
-      <Icon img={qualification} type='1' name='Qualification' />
-      <Icon img={github} type='1' name='Github' />
-      <Icon img={linkedin} type='1' name='LinkedIn' />
-      <Icon img={about} type='1' name='About' />
-      <Icon img={skills} type='1' name='Skills' />
-    </div>
-        {
-          blogsModal && 
-          <Blogs />
-        }
-        {
-          portfolioModal && 
-          <Portfolio/>
-        }
-        {
-          skillsModal &&
-          <Skills/>
-        }
-        {
-          aboutModal &&
-          <About/>
-        }
-        <Taskbar setContactModal={setContactModal} contactModal={contactModal} setWindowsModal={setWindowsModal} windowsModal={windowsModal}/>
-        {
-          contactModal && <ContactModal/>
-        }
-        {
-          windowsModal && <Windows/>
-        }
+    <div ref={mainRef} className='background-main'>
+      <div className='desktop-icons flex flex-col flex-wrap justify-start items-baseline h-5/6 w-fit pl-3 pt-3'>
+        <Icon img={computer} type='1' name='My computer' />
+        <Icon img={bin} type='1' name='Recycle' />
+        <Icon img={documents} type='1' name='Documents' />
+        <Icon onClick={() => { window.open('https://www.google.com/', '_blank'); }} img={chrome} type='1' name='Chrome' />
+        <Icon onClick={() => { window.open('https://drive.google.com/file/d/1VJY7zYJEbtapJTbHBcnYqT1UEZVC32s4/view?usp=sharing', '_blank') }} img={resume} type='1' name='Resume' />
+        <Icon img={downloads} type='1' name='Downloads' />
+        <Icon onClick={() => { openModal('blogs') }} img={blogs} type='1' name='Blogs' />
+        <Icon onClick={() => { openModal('port') }} img={brief} type='1' name='Portfolio' />
+        <Icon img={qualification} type='1' name='Qualification' />
+        <Icon onClick={() => { window.open('https://github.com/Khanisic', '_blank') }} img={github} type='1' name='Github' />
+        <Icon onClick={() => { window.open('https://www.linkedin.com/in/abdulmoidkhan/', '_blank') }} img={linkedin} type='1' name='LinkedIn' />
+        <Icon onClick={() => { openModal('about') }} img={about} type='1' name='About' />
+        <Icon onClick={() => { openModal('skills') }} img={skills} type='1' name='Skills' />
+      </div>
+      {
+        blogsModal &&
+        <Blogs setBlogsModal={setBlogsModal} blogsModal={blogsModal} />
+      }
+      {
+        portfolioModal &&
+        <Portfolio portfolioModal={portfolioModal} setPortfolioModal={setPortfolioModal} />
+      }
+      {
+        skillsModal &&
+        <Skills setSkillsModal={setSkillsModal} skillsModal={skillsModal} />
+      }
+      {
+        aboutModal &&
+        <About  setAboutModal={setAboutModal} aboutModal={aboutModal} />
+      }
+      <Taskbar setContactModal={setContactModal} contactModal={contactModal} setWindowsModal={setWindowsModal} windowsModal={windowsModal} />
+      {
+        contactModal && <ContactModal />
+      }
+      {
+        windowsModal && <Windows />
+      }
     </div>
   );
 }

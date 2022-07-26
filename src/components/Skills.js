@@ -13,10 +13,10 @@ import blener from '../Icons/Folder/blener.png'
 import django from '../Icons/Folder/django.png'
 import unity from '../Icons/Folder/unity.png'
 
-function Skills() {
+function Skills({skillsModal, setSkillsModal}) {
   return (
-    <div className='folder-main absolute flex flex-col items-center content-center h-screen justify-center w-full top-0'>
-            <div className='folder-top w-2/4 flex flex-col items-center py-12'>
+    <div onClick={ () => { setSkillsModal(!skillsModal)}} className='folder-main absolute flex flex-col items-center content-center h-screen justify-center w-full top-0'>
+            <div onClick={e => {e.stopPropagation();}} className='folder-top w-2/4 flex flex-col items-center py-12'>
                 <h1 className="text-white text-4xl text-center">Skills</h1>
                 <div className='grid w-5/6 grid-cols-2 sm:grid-cols-1 pt-5'>
                     <Icon img={html} type='3' name='HTML'/>

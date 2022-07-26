@@ -1,10 +1,10 @@
 import React from 'react'
 import Icon from './Icon'
 
-function About() {
+function About({setAboutModal,aboutModal}) {
     return (
-        <div className='folder-main absolute flex flex-col items-center content-center h-screen justify-center w-full top-0'>
-            <div className='folder-top w-2/4 flex flex-col items-center gap-4 py-12'>
+        <div onClick={ () => { setAboutModal(!aboutModal)}} className='folder-main absolute flex flex-col items-center content-center h-screen justify-center w-full top-0'>
+            <div onClick={e => {e.stopPropagation();}} className='folder-top w-2/4 flex flex-col items-center gap-4 py-12'>
                 <h1 className="text-white text-4xl text-center">About me</h1>
                 <p className='text-cyan-600 px-5 text-center'>Hello, <br/>
                     I am a CS graduate, a self-taught developer who excels in Frontend technologies like Next.js, 
