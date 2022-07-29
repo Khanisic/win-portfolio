@@ -30,17 +30,20 @@ import white from './background/white.png'
 
 function App() {
 
-  const images = [black, blue, green, lush, red, white]
+  const images = [blue, black, green, lush, red, white]
   const [contactModal, setContactModal] = useState(false)
   const [windowsModal, setWindowsModal] = useState(false)
   const [blogsModal, setBlogsModal] = useState(false)
   const [portfolioModal, setPortfolioModal] = useState(false)
   const [skillsModal, setSkillsModal] = useState(false)
   const [aboutModal, setAboutModal] = useState(false)
-  const [currentBgImg, setCurrentBgImg] = useState(black)
+  const [currentBgImg, setCurrentBgImg] = useState(blue)
   const [counter, setCounter] = useState(0);
 
-
+  useEffect(() => {
+    alert('Hey guys, this website is still under development. Check back in a few days for it to finish. Thanks :)')
+  }, [])
+  
   useEffect(() => {
     const changeImg = setInterval(() => {
       setCurrentBgImg(images[counter])
