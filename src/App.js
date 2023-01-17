@@ -88,7 +88,7 @@ function App() {
   const mainRef = useRef(null)
 
   return (
-    <div ref={mainRef} className='background-main'>
+    <div ref={mainRef} className='background-main overflow-hidden' >
       <img
         className="background-main"
         rel="preload"
