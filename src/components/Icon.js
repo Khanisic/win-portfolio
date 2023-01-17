@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Icon({ img, name, onClick, type, subtxt }) {
+function Icon({ img, name, onClick, type, subtxt, className }) {
 
 
   if (type === '2') {
@@ -44,7 +44,7 @@ function Icon({ img, name, onClick, type, subtxt }) {
 
 
   return (
-    <div  className='' onClick={onClick}>
+    <div  className={`${className}`} onClick={onClick}>
       <img className='icon' src={img} alt=""></img>
     </div>
 

@@ -6,7 +6,7 @@ import django from '../Icons/Folder/django.png'
 function Portfolio({portfolioModal, setPortfolioModal}) {
   return (
     <div onClick={ () => { setPortfolioModal(!portfolioModal); }} className='folder-main absolute flex flex-col items-center content-center h-screen justify-center w-full top-0'>
-            <div onClick={e => {e.stopPropagation();}} className='folder-top w-2/4 flex flex-col items-center py-12'>
+            <div onClick={e => {e.stopPropagation();}} className='windows-main overflow-auto md:w-5/6 max-h-[600px] folder-top w-2/4 flex flex-col items-center py-12'>
                 <h1 className="text-white text-4xl text-center">Portfolio</h1>
                 <div className='grid w-5/6 grid-cols-2 sm:grid-cols-1 pt-5'>
                     <Icon img={next} type='3' name='NFT Marketplace' subtxt='Solidity | Next.js | Tailwind'/>

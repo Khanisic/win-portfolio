@@ -40,9 +40,9 @@ function App() {
   const [currentBgImg, setCurrentBgImg] = useState(blue)
   const [counter, setCounter] = useState(0);
 
-  useEffect(() => {
-    alert('Hey guys, this website is still under development. Check back in a few days for it to finish. Thanks :)')
-  }, [])
+  // useEffect(() => {
+  //   alert('Hey guys, this website is still under development. Check back in a few days for it to finish. Thanks :)')
+  // }, [])
   
   useEffect(() => {
     const changeImg = setInterval(() => {
@@ -95,12 +95,12 @@ function App() {
         src={currentBgImg}
         alt=''
       />
-      <div className='desktop-icons flex flex-col flex-wrap justify-start items-baseline h-5/6 w-fit pl-3 pt-3'>
+      <div className='desktop-icons flex md:flex-row flex-col flex-wrap md:justify-center justify-start md:items-center items-baseline h-5/6 w-fit pl-3 pt-3'>
         <Icon img={computer} type='1' name='My computer' />
         <Icon img={bin} type='1' name='Recycle' />
         <Icon img={documents} type='1' name='Documents' />
         <Icon onClick={() => { window.open('https://www.google.com/', '_blank'); }} img={chrome} type='1' name='Chrome' />
-        <Icon onClick={() => { window.open('https://drive.google.com/file/d/1VJY7zYJEbtapJTbHBcnYqT1UEZVC32s4/view?usp=sharing', '_blank') }} img={resume} type='1' name='Resume' />
+        <Icon onClick={() => { window.open('https://docs.google.com/document/d/1SBBcuM9HMzPVOB6jThA6oOIi2lKPCXxgx0dc3Bp8Z1c/edit?usp=sharing', '_blank') }} img={resume} type='1' name='Resume' />
         <Icon img={downloads} type='1' name='Downloads' />
         <Icon onClick={() => { openModal('blogs') }} img={blogs} type='1' name='Blogs' />
         <Icon onClick={() => { openModal('port') }} img={brief} type='1' name='Portfolio' />
@@ -128,10 +128,10 @@ function App() {
       }
       <Taskbar setContactModal={setContactModal} contactModal={contactModal} setWindowsModal={setWindowsModal} windowsModal={windowsModal} />
       {
-        contactModal && <ContactModal />
+        contactModal && <ContactModal  setContactModal={setContactModal} contactModal={contactModal} />
       }
       {
-        windowsModal && <Windows />
+        windowsModal && <Windows setWindowsModal={setWindowsModal} windowsModal={windowsModal}/>
       }
     </div>
   );

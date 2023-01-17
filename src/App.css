@@ -14,37 +14,43 @@ p {
   z-index: -1;
   object-fit: cover;
 }
-.black{
+
+.black {
   background: url('./background/black.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.blue{
+
+.blue {
   background: url('./background/blue.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.green{
+
+.green {
   background: url('./background/green.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.lush{
+
+.lush {
   background: url('./background/lush.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.red{
+
+.red {
   background: url('./background/red.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.white{
+
+.white {
   background: url('./background/white.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -127,10 +133,30 @@ p {
 
 
 .contact-modal {
-  background: rgba(53, 53, 53, 0.9);
-  backdrop-filter: blur(20px);
-  overflow-y: scroll;
-  height: 550px;
+  background: rgba(0, 0, 0, 0.47);
+  backdrop-filter: blur(50px);
+  animation: in 0.3s ease-out forwards;
+  
+}
+
+@keyframes in {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .contact-time {
@@ -204,7 +230,9 @@ p {
   backdrop-filter: blur(4px);
 }
 
-.windows-main {}
+.windows-main {
+  animation: down 0.2s ease-out forwards;
+}
 
 .windows-inner-top {
   background: rgba(0, 0, 0, 0.7);
