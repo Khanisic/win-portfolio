@@ -12,6 +12,12 @@ import python from '../Icons/Folder/python.png'
 import blener from '../Icons/Folder/blener.png'
 import django from '../Icons/Folder/django.png'
 import unity from '../Icons/Folder/unity.png'
+import vite from '../Icons/Folder/vite.png'
+import mongo from '../Icons/Folder/mongo.png'
+import node from '../Icons/Folder/node.png'
+import ethers from '../Icons/Folder/ethers.svg'
+import redux from '../Icons/Folder/redux.png'
+import tail from '../Icons/Folder/tailwind.png'
 
 function Skills({skillsModal, setSkillsModal}) {
   return (
@@ -31,6 +37,12 @@ function Skills({skillsModal, setSkillsModal}) {
                     <Icon img={ml} type='3' name='Machine Learning' />
                     <Icon img={blener} type='3' name='Blender' />
                     <Icon img={unity} type='3' name='Unity3D' />
+                    <Icon img={vite} type='3' name='Vite.js' />
+                    <Icon img={node} type='3' name='Node.js' />
+                    <Icon img={mongo} type='3' name='Mongo DB' />
+                    <Icon img={ethers} type='3' name='Ethers.js' />
+                    <Icon img={redux} type='3' name='React Redux' />
+                    <Icon img={tail} type='3' name='Tailwind.css' />
                 </div>
             </div>
             

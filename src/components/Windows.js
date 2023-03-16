@@ -19,7 +19,7 @@ import resume from "../Icons/Windows/Bottom/resume.png";
 import skills from "../Icons/Windows/Bottom/skills.png";
 import notes from "../Icons/Windows/Bottom/notes.png";
 
-function Windows({windowsModal, setWindowsModal}) {
+function Windows({windowsModal, setWindowsModal, openModal}) {
   return (
     <div onClick={ () => { setWindowsModal(!windowsModal); }}  className="windows-main absolute flex flex-col bottom-16 items-center content-center justify-center w-full">
       <div onClick={e => {e.stopPropagation();}} className="windows-inner-top relative overflow-auto md:w-5/6 max-h-[600px] rounded-2xl ">
@@ -45,7 +45,7 @@ function Windows({windowsModal, setWindowsModal}) {
         <p className="text-white font-semibold pl-10 pt-9">Recommended</p>
         <div className="windows-recommened flex flex-wrap justify-between py-3 px-10">
           <div className="flex flex-col ">
-            <Icon type="2" img={notes} name="Blog" subtxt="Kickstarter Dapp" />
+            <Icon type="2" img={notes} onClick={() => { window.open("https://betterprogramming.pub/a-better-version-of-kickstarter-using-web3-0-solidity-8bbea829d2f0", '_blank') }}  name="Blog" subtxt="Kickstarter Dapp" />
             <Icon type="2" img={skills} name="Skills" subtxt="My skills" />
             <Icon type="2" img={resume} name="Pdf" subtxt="Resume.pdf" />
           </div>

@@ -131,12 +131,24 @@ p {
   background-color: #60606063;
 }
 
+.project{
+  animation: pro 0.5s ease-out forwards;
+}
+
+@keyframes pro {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 
 .contact-modal {
   background: rgba(0, 0, 0, 0.47);
   backdrop-filter: blur(50px);
   animation: in 0.3s ease-out forwards;
-  
 }
 
 @keyframes in {
@@ -268,6 +280,12 @@ p {
 
 .folder-top {
   background: rgba(25, 25, 25, 0.95);
+  backdrop-filter: blur(40px);
+  border-radius: 6px 6px 6px 6px;
+}
+
+.portfolio {
+  background: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(40px);
   border-radius: 6px 6px 6px 6px;
 }

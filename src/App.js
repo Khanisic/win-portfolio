@@ -47,7 +47,6 @@ function App() {
   useEffect(() => {
     const changeImg = setInterval(() => {
       setCurrentBgImg(images[counter])
-      console.log(counter)
       if (counter === 5) {
         setCounter(0)
       } else {
@@ -100,7 +99,7 @@ function App() {
         <Icon img={bin} type='1' name='Recycle' />
         <Icon img={documents} type='1' name='Documents' />
         <Icon onClick={() => { window.open('https://www.google.com/', '_blank'); }} img={chrome} type='1' name='Chrome' />
-        <Icon onClick={() => { window.open('https://docs.google.com/document/d/1SBBcuM9HMzPVOB6jThA6oOIi2lKPCXxgx0dc3Bp8Z1c/edit?usp=sharing', '_blank') }} img={resume} type='1' name='Resume' />
+        <Icon onClick={() => { window.open('https://docs.google.com/document/d/1SBBcuM9HMzPVOB6jThA6oOIi2lKPCXxgx0dc3Bp8Z1c/edit', '_blank') }} img={resume} type='1' name='Resume' />
         <Icon img={downloads} type='1' name='Downloads' />
         <Icon onClick={() => { openModal('blogs') }} img={blogs} type='1' name='Blogs' />
         <Icon onClick={() => { openModal('port') }} img={brief} type='1' name='Portfolio' />
@@ -131,7 +130,7 @@ function App() {
         contactModal && <ContactModal  setContactModal={setContactModal} contactModal={contactModal} />
       }
       {
-        windowsModal && <Windows setWindowsModal={setWindowsModal} windowsModal={windowsModal}/>
+        windowsModal && <Windows openModal={openModal} setWindowsModal={setWindowsModal} windowsModal={windowsModal}/>
       }
     </div>
   );

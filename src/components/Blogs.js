@@ -34,9 +34,12 @@ function Blogs({ folder, setBlogsModal, blogsModal }) {
             <div className='windows-main windows-main overflow-auto md:w-5/6 max-h-[600px] folder-top w-2/4 flex flex-col items-center py-12 z-10' onClick={e => {e.stopPropagation();}}>
                 <h1 className="text-white text-4xl">Blogs</h1>
                 <div className='grid w-5/6 grid-cols-2 sm:grid-cols-1 pt-5'>
-                    <Icon img={blog} type='3' name='Creating an NFT Marketplace With Solidity' subtxt='With just 200 lines of code'/>
-                    <Icon img={blog} type='3' name='A Better Version of Kickstarter Using Web3.0 — Solidity' subtxt='To prevent Kickstarter fraud, contributors can vote on monetary decisions'/>
-                    <Icon img={blog} type='3' name='Memory vs Storage' subtxt='Persistent and temporary data storage.'/>
+                    <Icon img={blog} type='3' onClick={() => { window.open('https://betterprogramming.pub/creating-an-nft-marketplace-solidity-2323abca6346', '_blank') }}  name='Creating an NFT Marketplace With Solidity' subtxt='With just 200 lines of code'/>
+                    <Icon img={blog} type='3' onClick={() => { window.open("https://betterprogramming.pub/a-better-version-of-kickstarter-using-web3-0-solidity-8bbea829d2f0", '_blank') }}  name='A Better Version of Kickstarter Using Web3.0 — Solidity' subtxt='To prevent Kickstarter fraud, contributors can vote on monetary decisions'/>
+                    <Icon img={blog} type='3' onClick={() => { window.open('"https://coinsbench.com/memory-vs-storage-copy-vs-reference-solidity-4d46b50533ba"', '_blank') }}  name='Memory vs Storage' subtxt='Persistent and temporary data storage.'/>
+                    <Icon img={blog} type='3' onClick={() => { window.open('"https://coinsbench.com/a-quick-guide-to-developing-upgradable-smart-contracts-using-uups-openzeppelin-3f2b6809b8b"', '_blank') }}  name='A quick guide to developing upgradable smart contracts' subtxt='using UUPS — Openzeppelin'/>
+                    <Icon img={blog} type='4' onClick={() => { window.open("https://coinsbench.com/lazy-nft-minting-eip-721-and-vouchers-88ad41654e6b", '_blank') }}  name='Lazy NFT Minting' subtxt='— EIP 721 and Voucher'/>
+                
                 </div>
             </div>
             
