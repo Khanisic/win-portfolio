@@ -47,7 +47,7 @@ function ContactModal({ setContactModal, contactModal }) {
               </div>
               <div className="contact-link-box-right flex flex-col  gap-1">
                 <p className="text-white text-md">Mail</p>
-                <p className="text-gray-500 text-sm">skhan852000@gmail.com</p>
+                <p className="text-gray-500 text-sm">amohammed48@mail.bradley.edu</p>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ function ContactModal({ setContactModal, contactModal }) {
               </div>
               <div className="contact-link-box-right flex flex-col  gap-1">
                 <p className="text-white text-md">Location</p>
-                <p className="text-gray-500 text-sm">Hyderabad, India</p>
+                <p className="text-gray-500 text-sm">Peoria, Illinois</p>
               </div>
             </div>
             <div className="contact-link-box flex items-end  gap-2 justify-between">
