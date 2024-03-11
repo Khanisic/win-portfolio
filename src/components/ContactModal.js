@@ -27,7 +27,7 @@ function ContactModal({ setContactModal, contactModal }) {
               </div>
               <div className="contact-link-box-right flex flex-col  gap-1">
                 <p className="text-white text-md">Phone</p>
-                <p className="text-gray-500 text-sm">+91 6309535275</p>
+                <p className="text-gray-500 text-sm">+1 309-679-7150</p>
               </div>
             </div>
 
