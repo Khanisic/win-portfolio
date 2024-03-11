@@ -50,6 +50,11 @@ import car2 from "./car2.png"
 import car3 from "./car3.png"
 
 
+import thread1 from "./thread.png"
+import thread2 from "./thread4.png"
+import thread3 from "./thread2.png"
+import thread4 from "./thread3.png"
+
 export const data = [
   {
     title: "NFT Marketplace",
@@ -131,6 +136,15 @@ export const data = [
     stack: [ethers, solidity, tailwind, nextjs],
     stackStr : "vite | tailwind | solidity | ethers"
   },
+  {
+    title: "Threads - Clone",
+    subtitle: " A clone of popular social media application Threads",
+    github: "https://github.com/Khanisic/threads",
+    vercel: "https://threads-khanisic.vercel.app/",
+    images: [thread1, thread2, thread3, thread4],
+    stack: [nextjs, tailwind, mongo, node],
+    stackStr: "nextjs | tailwind | mongo | node"
+  }
 ];
 
 

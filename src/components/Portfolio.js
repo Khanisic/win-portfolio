@@ -39,7 +39,7 @@ function Portfolio({ portfolioModal, setPortfolioModal }) {
             />
           </div>
           <div className="flex mx-3">
-            <PortfolioProject project={data[currentProject]} />;
+            <PortfolioProject project={data[currentProject]} />
           </div>
           <div className="w-[150px] z-50 flex justify-end">
             <Icons.Right

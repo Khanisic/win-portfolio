@@ -47,7 +47,7 @@ function Windows({windowsModal, setWindowsModal, openModal}) {
           <div className="flex flex-col ">
             <Icon type="2" img={notes} onClick={() => { window.open("https://betterprogramming.pub/a-better-version-of-kickstarter-using-web3-0-solidity-8bbea829d2f0", '_blank') }}  name="Blog" subtxt="Kickstarter Dapp" />
             <Icon type="2" img={skills} name="Skills" subtxt="My skills" />
-            <Icon type="2" img={resume} name="Pdf" subtxt="Resume.pdf" />
+            <Icon  onClick={() => { window.open('https://docs.google.com/document/d/1mvF74krMGBAvVVulC4CnHl34nIUR-VdFM7AV7yK0BT4/edit', '_blank') }} type="2" img={resume} name="Pdf" subtxt="Resume.pdf" />
           </div>
           <div className="flex flex-col ">
             <Icon type="2" img={about} name="Note" subtxt="About me" />
