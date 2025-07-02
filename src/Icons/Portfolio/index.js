@@ -17,7 +17,11 @@ import node from '../Folder/node.png'
 import mongo from '../Folder/mongo.png'
 import redux from '../Folder/redux.png'
 import react from '../Folder/reactjs.png'
-
+import svelte from '../Folder/svelte.png'
+import spring from '../Folder/spring.png'
+import gql from '../Folder/gql.png'
+import postgres from '../Folder/postgres.png'
+import gemini from '../Folder/gemini.png'
 
 import avax from './avax1.png'
 import avax2 from './avax2.png'
@@ -55,7 +59,31 @@ import thread2 from "./thread4.png"
 import thread3 from "./thread2.png"
 import thread4 from "./thread3.png"
 
+import rankem1 from "./rankem_1.png"
+import rankem2 from "./rankem_2.png"
+import rankem3 from "./rankem_3.png"
+import rankem4 from "./rankem_4.png"
+
+import aca1 from "./aca_1.png"
+import aca2 from "./aca_2.png"
+import aca3 from "./aca_3.png"
+import aca4 from "./aca_4.png"
+
+import mc1 from "./mc_1.png"
+import mc2 from "./mc_2.png"
+import mc3 from "./mc_3.png"
+import mc4 from "./mc_4.png"
+
 export const data = [
+  {
+    title: "Meetcode",
+    subtitle: "A competitive coding and collaborative coding platform.",
+    github: "https://github.com/Khanisic/dsa-colab-frontend",
+    vercel: "https://dsa-colab-frontend.vercel.app/p",
+    images: [mc1, mc2, mc3, mc4],
+    stack: [spring, gql, postgres, nextjs],
+    stackStr: "spring | gql | postgres | nextjs"
+  },
   {
     title: "NFT Marketplace",
     subtitle:
@@ -64,7 +92,7 @@ export const data = [
     vercel: "https://nft-marketplace-khanisic.vercel.app",
     images: [nftmp1, nftmp4, nftmp2, nftmp3],
     stack: [nextjs, tailwind, solidity, ethers],
-    stackStr : "nextjs | tailwind | solidity | ethers"
+    stackStr: "nextjs | tailwind | solidity | ethers"
   },
   {
     title: "Crowdcoin",
@@ -73,8 +101,8 @@ export const data = [
     github: "https://github.com/Khanisic/Crowdcoin",
     vercel: "https://crowdcoin-five.vercel.app/",
     images: [coin, coin4, coin2, coin3],
-    stack: [ethers, solidity, tailwind,nextjs],
-    stackStr : "nextjs | tailwind | solidity | ethers"
+    stack: [ethers, solidity, tailwind, nextjs],
+    stackStr: "nextjs | tailwind | solidity | ethers"
   },
   {
     title: "AVAX Gods NFT Card game",
@@ -84,7 +112,7 @@ export const data = [
     vercel: "https://avax-gods-game.vercel.app",
     images: [avax, avax4, avax2, avax3],
     stack: [tailwind, vite, solidity, solidity],
-    stackStr : "vite | tailwind | solidity | ethers"
+    stackStr: "vite | tailwind | solidity | ethers"
   },
   {
     title: "Snapgram",
@@ -94,7 +122,7 @@ export const data = [
     vercel: "https://snapgram-alpha.vercel.app",
     images: [snap, snap1, snap2, snap3],
     stack: [node, mongo, react, redux],
-    stackStr : "node | mongo | react | redux"
+    stackStr: "node | mongo | react | redux"
   },
   {
     title: "NFT turn based game",
@@ -104,7 +132,7 @@ export const data = [
     vercel: "https://nft-turn-based-game-ten.vercel.app",
     images: [turn3, turn, turn4, turn2],
     stack: [tailwind, vite, solidity, react],
-    stackStr : "vite | tailwind | solidity | ethers"
+    stackStr: "vite | tailwind | solidity | ethers"
   },
   {
     title: "NFT airline tickets",
@@ -114,7 +142,7 @@ export const data = [
     vercel: "https://airline-nf-ts-tickets.vercel.app",
     images: [air3, air2, air1, air],
     stack: [ethers, solidity, tailwind, nextjs],
-    stackStr : "vite | tailwind | solidity | ethers"
+    stackStr: "vite | tailwind | solidity | ethers"
   },
   {
     title: "AI Dall-E Image generation MERN application",
@@ -124,7 +152,7 @@ export const data = [
     vercel: "https://ai-dall-e.vercel.app",
     images: [ai, ai2, ai3, ai],
     stack: [node, mongo, react, tailwind],
-    stackStr : "node | mongo | react | redux"
+    stackStr: "node | mongo | react | redux"
   },
   {
     title: "Carcoin (Under development)",
@@ -134,7 +162,7 @@ export const data = [
     vercel: "https://car-coin.vercel.app",
     images: [car, car2, car3, car1],
     stack: [ethers, solidity, tailwind, nextjs],
-    stackStr : "vite | tailwind | solidity | ethers"
+    stackStr: "vite | tailwind | solidity | ethers"
   },
   {
     title: "Threads - Clone",
@@ -144,6 +172,24 @@ export const data = [
     images: [thread1, thread2, thread3, thread4],
     stack: [nextjs, tailwind, mongo, node],
     stackStr: "nextjs | tailwind | mongo | node"
+  },
+  {
+    title: "RankEm",
+    subtitle: "Rank your friends and foes",
+    github: "https://github.com/Khanisic/rankem",
+    vercel: "https://rankem-seven.vercel.app",
+    images: [rankem1, rankem2, rankem3, rankem4],
+    stack: [nextjs, tailwind, mongo, node],
+    stackStr: "nextjs | tailwind | mongo | node"
+  },
+  {
+    title: "Academic Planner",
+    subtitle: "Academic Planner for students with AI chatbot and personalized course planner",
+    github: "https://github.com/Khanisic/Academic-Planner",
+    vercel: "https://academic-planner-tau.vercel.app",
+    images: [aca1, aca2, aca3, aca4],
+    stack: [svelte, tailwind, mongo, gemini],
+    stackStr: "svelte | tailwind | mongo | gemini"
   }
 ];
 
