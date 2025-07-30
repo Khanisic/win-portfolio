@@ -85,6 +85,34 @@ export const data = [
     stackStr: "spring | gql | postgres | nextjs"
   },
   {
+    title: "RankEm",
+    subtitle: "Rank your friends and foes",
+    github: "https://github.com/Khanisic/rankem",
+    vercel: "https://www.rankems.xyz/",
+    images: [rankem1, rankem2, rankem3, rankem4],
+    stack: [nextjs, tailwind, mongo, node],
+    stackStr: "nextjs | tailwind | mongo | node"
+  },
+  {
+    title: "Academic Planner",
+    subtitle: "Academic Planner for students with AI chatbot and personalized course planner",
+    github: "https://github.com/Khanisic/Academic-Planner",
+    vercel: "https://academic-planner-tau.vercel.app",
+    images: [aca1, aca2, aca3, aca4],
+    stack: [svelte, tailwind, mongo, gemini],
+    stackStr: "svelte | tailwind | mongo | gemini"
+  },
+  {
+    title: "NFT airline tickets",
+    subtitle:
+      "Fligt tickets booking web3 dapp where tickets are minted as NFTs and can be traded on Opensea.com",
+    github: "https://github.com/Khanisic/Airline_NFTs_Tickets",
+    vercel: "https://airline-nf-ts-tickets.vercel.app",
+    images: [air3, air2, air1, air],
+    stack: [ethers, solidity, tailwind, nextjs],
+    stackStr: "vite | tailwind | solidity | ethers"
+  },
+  {
     title: "NFT Marketplace",
     subtitle:
       "An NFT Marketplace where you can upload your images and watch them turn into NFTs. Here, you can trade your NFTs with other creators.",
@@ -135,16 +163,6 @@ export const data = [
     stackStr: "vite | tailwind | solidity | ethers"
   },
   {
-    title: "NFT airline tickets",
-    subtitle:
-      "Fligt tickets booking web3 dapp where tickets are minted as NFTs and can be traded on Opensea.com",
-    github: "https://github.com/Khanisic/Airline_NFTs_Tickets",
-    vercel: "https://airline-nf-ts-tickets.vercel.app",
-    images: [air3, air2, air1, air],
-    stack: [ethers, solidity, tailwind, nextjs],
-    stackStr: "vite | tailwind | solidity | ethers"
-  },
-  {
     title: "AI Dall-E Image generation MERN application",
     subtitle:
       "A full stack MERN application that create images using AI and showcases others quirky image ideas as well",
@@ -173,24 +191,7 @@ export const data = [
     stack: [nextjs, tailwind, mongo, node],
     stackStr: "nextjs | tailwind | mongo | node"
   },
-  {
-    title: "RankEm",
-    subtitle: "Rank your friends and foes",
-    github: "https://github.com/Khanisic/rankem",
-    vercel: "https://www.rankems.xyz/",
-    images: [rankem1, rankem2, rankem3, rankem4],
-    stack: [nextjs, tailwind, mongo, node],
-    stackStr: "nextjs | tailwind | mongo | node"
-  },
-  {
-    title: "Academic Planner",
-    subtitle: "Academic Planner for students with AI chatbot and personalized course planner",
-    github: "https://github.com/Khanisic/Academic-Planner",
-    vercel: "https://academic-planner-tau.vercel.app",
-    images: [aca1, aca2, aca3, aca4],
-    stack: [svelte, tailwind, mongo, gemini],
-    stackStr: "svelte | tailwind | mongo | gemini"
-  }
+
 ];
 
 
