@@ -177,7 +177,7 @@ export const data = [
     title: "RankEm",
     subtitle: "Rank your friends and foes",
     github: "https://github.com/Khanisic/rankem",
-    vercel: "https://rankem-seven.vercel.app",
+    vercel: "https://www.rankems.xyz/",
     images: [rankem1, rankem2, rankem3, rankem4],
     stack: [nextjs, tailwind, mongo, node],
     stackStr: "nextjs | tailwind | mongo | node"
